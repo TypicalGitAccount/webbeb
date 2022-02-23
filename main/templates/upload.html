@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <meta charset="utf-8">
+        <title>Вкладка 1</title>
+    </head>
+
+
+    <body style="height: 100%; background: #c4dfe6;">
+        <table class="my-table">
+            <colgroup>
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+            </colgroup>
+            <tr class="header">
+                <td class="header-row" colspan="2">
+                    <a href="../"><img class="logo" src="{% static 'images/istockphoto-1131910096-612x612.jpg' %}" alt="logo" href="../"></a>
+                    <a class="regular-text inline-block spotter" href="../">Spotter</a>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 1</option>
+                        <option value="../upload">Вивантажити таблиці</option>
+                        <option value="../recover">Відновити дані</option>
+                        <option value="../download">Завантажити таблиці</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 2</option>
+                        <option value="../report">Звіт</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 3</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 4</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 5</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 6</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td colspan="3" rowspan="3">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td colspan="5" rowspan="5">
+                    <img class="upload-image" src="{% static 'images/spreadsheet_loader.gif' %}" alt="folder with exel">
+                </td>
+                <td colspan="5" rowspan="5">
+                    <img class="upload-image" src="{% static 'images/cloud-file-upload-using-css.gif' %}" alt="file cloud" >
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr><tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tr><tr class="common">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+                
+        </table>
+                        <div class="text" style="margin-left:300px; margin-top:-455px; position:absolute;">
+                    <form  method="post" action="{% url 'upload' %}" enctype="multipart/form-data" >
+                        {% csrf_token %}
+                        {{ form.as_table }}
+                        <input class="cute-button" role="button" type="submit" name="submit" value="Upload File">
+                      </form>
+                    </div>
+
+    </body>
+</html>

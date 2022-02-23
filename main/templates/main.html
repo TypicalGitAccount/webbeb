@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <meta charset="utf-8">
+        <title>Spotter</title>
+    </head>
+
+
+    <body style="height: 100%; background: #c4dfe6;">
+        <table class="my-table">
+            <colgroup>
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+            </colgroup>
+            <tr class="header">
+                <td class="header-row" colspan="2">
+                    <a href="../"><img class="logo" src="{% static 'images/istockphoto-1131910096-612x612.jpg' %}" alt="logo" href="../"></a>
+                    <a class="regular-text inline-block spotter" href="../">Spotter</a>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 1</option>
+                        <option value="/upload">Вивантажити таблиці</option>
+                        <option value="/recover">Відновити дані</option>
+                        <option value="/download">Завантажити таблиці</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 2</option>
+                        <option value="../report">Звіт про погодні умови регіону</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 3</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 4</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 5</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 6</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td colspan="5"></td>
+                <td colspan="5"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td colspan="5" rowspan="2">
+                    <p class="common-text  text-shadow" style="margin-left: 75px; margin-right: 75px; font-size: 20px;">Люди спостерігають за погодою, ведуть календарі спостережень, збирають та аналізують данні. На їх основі складають прогнози погоди. Ми виріши зробити крок вперед та застосувати ці знання на практиці.</p>
+                </td>
+                <td colspan="5" rowspan="8">
+                    <img class="main-page-photo" width="440" src="{% static 'images/11machin-illo-superJumbo-v3.jpg' %}" alt="main-page-photo">
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td colspan="5" rowspan="3">
+                    <p class="common-text  text-shadow" style="font-size: 24px">
+                        <strong class="spotter-text">Spotter</strong> - це спостереження за:<br>
+                        - температурою повітря;<br>
+                       - напрямом та силою вітру;<br>
+                       - атмосферним тиском;<br>
+                       - типом погоди. 
+                    </p>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td colspan="5" rowspan="3">
+                    <p class="common-text text-shadow" style="font-size: 20px;">
+                        Усю отриману інформацію ми аналізуємо, обробляємо та<br>
+                        перетворюємо у вигляд, який легко сприймається людиною.<br>
+                        Також на основі обробленої інформації ми дамо пораду<br>
+                        про утеплення будинку, його автоматичного опалення та<br>
+                        нагріву води у будь-яку пору року. Можемо проанлізувати<br>
+                        доцільність встеновлення сонячних панелей або повітряних<br>
+                        електростанцій  вашому регіоні.
+                    </p>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td colspan="5"></td>
+                <td colspan="5"></td>
+                <td></td>
+                <td></td>
+            </tr>                
+        </table>
+
+    </body>
+</html>

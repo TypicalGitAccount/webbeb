@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+        <meta charset="utf-8">
+        <title>Вкладка 2</title>
+    </head>
+
+
+    <body style="height: 100%; background: #c4dfe6;">
+        <table class="my-table">
+            <colgroup>
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+            </colgroup>
+            <tr class="header">
+                <td class="header-row" colspan="2">
+                    <a href="../s"><img class="logo" src="{% static 'images/istockphoto-1131910096-612x612.jpg' %}" alt="logo" href="../"></a>
+                    <a class="regular-text inline-block spotter" href="../">Spotter</a>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 1</option>
+                        <option value="../upload">Вивантажити таблиці</option>
+                        <option value="../recover">Відновити дані</option>
+                        <option value="../download">Завантажити таблиці</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 2</option>
+                        <option value="../report">Звіт про погодні умови регіону</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 3</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 4</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 5</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 6</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2">
+                    <p class="text"><b>Введіть регіон:</b><br>
+                    <input id="region" type="text" size="18" required class="text">
+                </td>
+                <td colspan="2">
+                    <p class="text"><b>Дата початку:</b><br>
+                    <input id="start_date" type="date" value="2012-01-01" class="text">
+                </td>
+                <td colspan="2">
+                    <p class="text"><b>Дата кінця:</b><br>
+                    <input id="end_date" type="date" value="2012-01-01" class="text">
+                </td>
+                <td colspan="2">
+                    <script src="{% static 'js/aboba.js' %}"></script>
+                    <button onclick="baboba()" class="cute-button">Сформувати звіт</button>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+                
+        </table>
+
+    </body>
+</html>

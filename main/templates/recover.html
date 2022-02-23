@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Вкладка 2</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
+
+    <!-- <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script> -->
+  </head>
+
+
+    <body style="height: 100%; background: #c4dfe6;">
+        <div id="zatemnenie">
+            <div id="okno">
+                <p style="color: #404040; font-size: 40px; font-family: Arial, Helvetica, sans-serif;">Зачекайте, будь ласка,<br>йде обробка даних...</p>
+                <img class="upload-image" src="{% static 'images/1073f350da2a46fa104d1a035bb2e144.gif' %}" alt="loading-gif" style="height: 400px;">
+            </div>
+          </div>
+
+        <table class="my-table">
+            <colgroup>
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+            </colgroup>
+            <tr class="header">
+                <td class="header-row" colspan="2">
+                    <a href="../"><img class="logo" src="{% static 'images/istockphoto-1131910096-612x612.jpg' %}" alt="logo" href="../"></a>
+                    <a class="regular-text inline-block spotter" href="../">Spotter</a>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 1</option>
+                        <option value="../upload">Вивантажити таблиці</option>
+                        <option value="../recover">Відновити дані</option>
+                        <option value="../download">Завантажити таблиці</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 2</option>
+                        <option value="../report">Звіт по погодним умовам регіону</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 3</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 4</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 5</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 6</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="3">
+                    <script src="{% static 'js/aboba.js' %}"></script>
+                    <a onclick="aboba()" href="#zatemnenie" class="cute-button">Відновити дані</a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common" style="height: 650px;">
+                <td></td>
+                <td></td>
+                <td colspan="10">
+                    <img class="upload-image" src="{% static 'images/spreadsheet_loader.gif' %}" alt="aboba" style="width: 1050px; margin-left: 140px; height: 550px;">
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

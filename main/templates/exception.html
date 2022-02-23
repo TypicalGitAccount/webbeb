@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <meta charset="utf-8">
+        <title>Помилка</title>
+    </head>
+
+
+    <body style="height: 100%; background: #c4dfe6;">
+        <table class="my-table">
+            <colgroup>
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+            </colgroup>
+            <tr class="header">
+                <td class="header-row" colspan="2">
+                    <a href="../"><img class="logo" src="{% static 'images/istockphoto-1131910096-612x612.jpg' %}" alt="logo" href="../"></a>
+                    <a class="regular-text inline-block spotter" href="../">Spotter</a>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 1</option>
+                        <option value="upload.html">Вивантажити таблиці</option>
+                        <option value="recover.html">Відновити дані</option>
+                        <option value="download.html">Завантажити таблиці</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 2</option>
+                        <option value="report.html">Звіт</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 3</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 4</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 5</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 6</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td colspan="2">
+                    <a href="../"><button class="cute-button">Назад</button></a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td colspan="10">
+                    <p class="text">{{err_msg}}</p>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td colspan="10">
+                    <img class="upload-image" src="{% static 'images/f120d1754c380a11c86ecb4e717f0613.gif'%}" style="height:600px; width:1000px;">
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+                
+        </table>
+
+    </body>
+</html>

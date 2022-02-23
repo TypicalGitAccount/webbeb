@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <meta charset="utf-8">
+        <title>Вкладка 2</title>
+    </head>
+
+
+    <body style="height: 100%; background: #c4dfe6;">
+        <table class="my-table">
+            <colgroup>
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+                <col width="7.14%">
+            </colgroup>
+            <tr class="header">
+                <td class="header-row" colspan="2">
+                    <a href="../../../../../../../../"><img class="logo" src="{% static 'images/istockphoto-1131910096-612x612.jpg' %}" alt="logo" href="../../../../../../../../"></a>
+                    <a class="regular-text inline-block spotter" href="../../../../../../../../">Spotter</a>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 1</option>
+                        <option value="../../../../../../../../upload">Вивантажити таблиці</option>
+                        <option value="../../../../../../../../recover">Відновити дані</option>
+                        <option value="../../../../../../../../download">Завантажити таблиці</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 2</option>
+                        <option value="../../../../../../../../report">Звіт по погодним умовам регіону</option>
+                    </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 3</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 4</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 5</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+                <td class="header-row" colspan="2">
+                    <select class="page-selector" onchange="top.location=this.value">
+                        <option disabled selected hiden>Вкладка 6</option>
+                        <option value="">Сторінка</option>
+                        </select>
+                </td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2">
+                    <a href="../../../../../../../../report"><button class="cute-button">Вибрати нові умови</button></a>
+                </td>
+                <td colspan="2"><p class="text" style="text-align:center;">{{report_label}}</p> </td>
+                <td colspan="2">
+                    <a href="../../../../../../../report/report.pdf"><button class="cute-button" style="margin-left: 80px;">Завантaжити звіт</button></a>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="common">
+                <td></td>
+                <td colspan="12" style="height: 1200px;">
+                    {% for img in data%}
+                        <img class="report-image" src="data:image/png;base64,{{ img }}" alt="">
+                    {% endfor %}
+                    {% for img in wind_rose%}
+                        <img class="report-roze-image" src="data:image/png;base64,{{  img  }}">
+                    {% endfor %}
+                    <button class="shtil"> {{additional_winds}} </button>
+                </td>
+                <td></td>
+            </tr>       
+                
+        </table>
+
+    </body>
+</html>
