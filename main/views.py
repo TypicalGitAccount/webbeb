@@ -2,7 +2,7 @@ import base64
 import io
 import urllib.parse
 import numpy as np
-from django.shortcuts import render, render_to_response, redirect
+from django.shortcuts import render, render, redirect
 from main.forms import Uploadfileform
 import main.DataRecovery
 from sqlite3 import connect
@@ -32,7 +32,7 @@ def folder(request):
     exel_path = "/exel"
     path = dirname(abspath(__file__)) + exel_path
     img_list = listdir(path)
-    return render_to_response('download.html', {'images': img_list})
+    return render(request, 'download.html', {'images': img_list})
 
 
 def download(request, filename):
@@ -45,7 +45,7 @@ def download(request, filename):
 
 
 def download_report(request):
-    file_path = '/home/linuh/Desktop/beb/report.pdf'
+    file_path = '/home/laminat/Documents/code/web/webbeb/report.pdf'
     with open(file_path, 'rb') as file:
         response = HttpResponse(file.read(), content_type='application/pdf')
         response['Content-Disposition'] = 'attachment; filename=report.pdf'
@@ -271,7 +271,7 @@ def reported(request, city, start_day, start_month, start_year, end_day, end_mon
 
     # pdf report creation
     pdf = FPDF()
-    pdf.add_font('DejaVu', '', 'DejaVuSansCondensed.ttf', uni=True)
+    pdf.add_font('DejaVu', '', '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', uni=True)
     pdf.set_font('DejaVu', '', 14)
     with tempfile.NamedTemporaryFile(mode="wb", suffix='.png') as png:
         temp_image.save(png.name)
